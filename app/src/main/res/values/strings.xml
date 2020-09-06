@@ -7,6 +7,5 @@
     <string name="a">A</string>
     <string name="b">B</string>
     <string name="and">A^B</string>
-    <string name="correct">Je antwoorden zijn correct</string>
-    <string name="incorrect">Je antwoorden zijn incorrect</string>
+    <string name="response_string">%d velden zijn goed ingevoeld</string>
 </resources>

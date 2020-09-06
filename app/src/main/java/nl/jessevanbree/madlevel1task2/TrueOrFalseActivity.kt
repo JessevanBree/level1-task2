@@ -30,12 +30,26 @@ class TrueOrFalseActivity : AppCompatActivity() {
     }
 
     fun onSubmit() {
-        var toastString: String = if (checkAnswers()) getString(R.string.correct) else getString(R.string.incorrect)
+        var correctAnswer: Int = checkAnswers()
+        var toastString: String = getString(R.string.response_string, correctAnswer)
         Toast.makeText(applicationContext, toastString, Toast.LENGTH_SHORT).show()
     }
 
-    fun checkAnswers(): Boolean {
-        return inputTT == "T" && inputTF == "F" && inputFT == "F" && inputFF == "F"
+    fun checkAnswers(): Int {
+        var correctAnswers = 0
+        if(inputTT == "T") {
+           correctAnswers++
+        }
+        if(inputTF == "F") {
+            correctAnswers++
+        }
+        if(inputFT == "F") {
+            correctAnswers++
+        }
+        if(inputFF == "F") {
+            correctAnswers++
+        }
+        return correctAnswers
     }
 
     private val textWatcher = object: TextWatcher {
