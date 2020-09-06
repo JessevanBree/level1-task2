@@ -158,7 +158,8 @@
         android:layout_marginBottom="35dp"
         android:ems="10"
         android:inputType="text"
-        android:text="@={inputFF}"
+        android:maxLength="1"
+        android:digits="TF"
         app:layout_constraintBottom_toTopOf="@+id/inputTF"
         app:layout_constraintEnd_toEndOf="parent" />
 
@@ -169,6 +170,8 @@
         android:layout_marginEnd="16dp"
         android:layout_marginBottom="30dp"
         android:ems="10"
+        android:maxLength="1"
+        android:digits="TF"
         android:inputType="text"
         app:layout_constraintBottom_toTopOf="@+id/inputFT"
         app:layout_constraintEnd_toEndOf="parent" />
@@ -181,6 +184,8 @@
         android:layout_marginBottom="36dp"
         android:ems="10"
         android:inputType="text"
+        android:maxLength="1"
+        android:digits="TF"
         app:layout_constraintBottom_toTopOf="@+id/inputFF"
         app:layout_constraintEnd_toEndOf="parent" />
 
@@ -193,6 +198,8 @@
         android:layout_marginBottom="223dp"
         android:ems="10"
         android:inputType="text"
+        android:maxLength="1"
+        android:digits="TF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/textView13" />
